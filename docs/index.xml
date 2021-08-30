@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Introduction</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/introduction/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/introduction/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/introduction/</guid>
       <description>
         
         
@@ -44,10 +44,10 @@ Explore the Community Ansible Collection for Dell EMC&lt;/p&gt;
     
     <item>
       <title>Docs: Licensing</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/licensing/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/licensing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/licensing/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/licensing/</guid>
       <description>
         
         
@@ -58,10 +58,10 @@ Explore the Community Ansible Collection for Dell EMC&lt;/p&gt;
     
     <item>
       <title>Docs: PowerFlex Product Guide</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerflex/product-guide/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerflex/product-guide/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/product-guide/</guid>
       <description>
         
         
@@ -3153,10 +3153,10 @@ EMC PowerFlex storage platform.&lt;/li&gt;
     
     <item>
       <title>Docs: PowerFlex Release Notes</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerflex/release-notes/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerflex/release-notes/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/release-notes/</guid>
       <description>
         
         
@@ -3265,10 +3265,10 @@ page. It includes the following:&lt;/p&gt;
     
     <item>
       <title>Docs: PowerMax Product Guide</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powermax/product-guide/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powermax/product-guide/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/product-guide/</guid>
       <description>
         
         
@@ -14284,10 +14284,10 @@ the storage pool with maximum free storage&lt;/p&gt;
     
     <item>
       <title>Docs: PowerMax Release Notes</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powermax/release-notes/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powermax/release-notes/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/release-notes/</guid>
       <description>
         
         
@@ -14466,10 +14466,10 @@ page. It includes the following:&lt;/p&gt;
     
     <item>
       <title>Docs: PowerScale Product Guide</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerscale/product_guide/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/product_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerscale/product_guide/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/product_guide/</guid>
       <description>
         
         
@@ -18570,10 +18570,10 @@ Delete a filesystem snapshot.&lt;/p&gt;
     
     <item>
       <title>Docs: PowerScale Release Notes</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerscale/release-notes/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerscale/release-notes/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/release-notes/</guid>
       <description>
         
         
@@ -18852,10 +18852,10 @@ at https:// &lt;a href=&#34;http://www.dell.com/community/Automation/bd-p/Automa
     
     <item>
       <title>Docs: PowerStore Product Guide</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerstore/product-guide/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerstore/product-guide/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/product-guide/</guid>
       <description>
         
         
@@ -24665,10 +24665,10 @@ Delete an existing protection policy.&lt;/p&gt;
     
     <item>
       <title>Docs: PowerStore Release Notes</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerstore/release-notes/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/powerstore/release-notes/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/release-notes/</guid>
       <description>
         
         
@@ -24769,10 +24769,10 @@ page. It includes the following:&lt;/p&gt;
     
     <item>
       <title>Docs: Support</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/support/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/support/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/support/</guid>
       <description>
         
         
@@ -24784,10 +24784,10 @@ page. It includes the following:&lt;/p&gt;
     
     <item>
       <title>Docs: Unity Product Guide</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/unity/product-guide/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/unity/product-guide/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/product-guide/</guid>
       <description>
         
         
@@ -30856,10 +30856,10 @@ Modify storage pool&lt;/p&gt;
     
     <item>
       <title>Docs: Unity Release notes</title>
-      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/unity/release-notes/</link>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/platforms/unity/release-notes/</guid>
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/release-notes/</guid>
       <description>
         
         
