@@ -1,5 +1,5 @@
 ---
-title: PowerMax Product Guide
+title: Product Guide
 Description: PowerMax Product guide documentation
 weight: 1
 ---

@@ -1,5 +1,5 @@
 ---
-title: Unity Release notes
+title: Release notes
 Description: Unity Release notes documentation
 weight: 1
 ---

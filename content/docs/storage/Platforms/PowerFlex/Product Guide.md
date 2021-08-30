@@ -1,5 +1,5 @@
 ---
-title: PowerFlex Product Guide
+title: Product Guide
 Description: PowerFlex Product guide documentation
 weight: 1
 ---

@@ -1,5 +1,5 @@
 ---
-title: PowerScale Product Guide
+title: Product Guide
 Description: PowerScale Product guide documentation
 weight: 1
 ---

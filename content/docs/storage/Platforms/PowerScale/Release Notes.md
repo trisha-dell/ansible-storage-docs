@@ -1,5 +1,5 @@
 ---
-title: PowerScale Release Notes
+title: Release Notes
 Description: PowerScale release notes documentation
 weight: 1
 ---

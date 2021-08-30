@@ -1,5 +1,5 @@
 ---
-title: PowerStore Release Notes
+title: Release Notes
 Description: PowerStore Release notes documentation
 weight: 1
 ---

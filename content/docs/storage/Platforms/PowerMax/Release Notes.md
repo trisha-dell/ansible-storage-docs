@@ -1,5 +1,5 @@
 ---
-title: PowerMax Release Notes
+title: Release Notes
 Description: PowerMax Release notes documentation
 weight: 1
 ---

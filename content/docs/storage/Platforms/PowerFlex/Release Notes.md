@@ -1,5 +1,5 @@
 ---
-title: PowerFlex Release Notes
+title: Release Notes
 Description: PowerFlex Release notes documentation
 weight: 1
 ---

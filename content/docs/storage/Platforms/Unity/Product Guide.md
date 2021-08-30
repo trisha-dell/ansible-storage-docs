@@ -1,5 +1,5 @@
 ---
-title: Unity Product Guide
+title: Product Guide
 Description: Unity Product guide documentation
 weight: 1
 ---

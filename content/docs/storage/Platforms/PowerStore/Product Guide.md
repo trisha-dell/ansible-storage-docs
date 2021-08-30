@@ -1,5 +1,5 @@
 ---
-title: PowerStore Product Guide
+title: Product Guide
 Description: PowerStore Product guide documentation
 weight: 1
 ---
