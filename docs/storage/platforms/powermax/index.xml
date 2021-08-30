@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: PowerMax Product Guide</title>
+      <title>Docs: Product Guide</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -11033,7 +11033,120 @@ the storage pool with maximum free storage&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: PowerMax Release Notes</title>
+      <title>Docs: ReadMe</title>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ansible-modules-for-dell-emc-powermax&#34;&gt;Ansible Modules for Dell EMC PowerMax&lt;/h1&gt;
+&lt;p&gt;The Ansible Modules for Dell EMC PowerMax allow data center and IT administrators to use RedHat Ansible to automate and orchestrate the configuration and management of Dell EMC PowerMax arrays.&lt;/p&gt;
+&lt;p&gt;The capabilities of Ansible modules are managing volumes, storage groups, ports, port groups, hosts, host groups, masking views, snapshots, SRDF links, RDF groups, metro DR environments, jobs, snapshot policies, storage pools and gathering high-level facts about the arrays. The options available for each capability are list, show, create, delete, and modify. These tasks can be executed by running simple playbooks written in yaml syntax. The modules are written so that all the operations are idempotent, therefore making multiple identical requests has the same effect as making a single request.&lt;/p&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;Ansible modules for PowerMax are supported by Dell EMC and are provided under the terms of the license attached to the source code. Dell EMC does not provide support for any source code modifications. For any Ansible module issues, questions or feedback, join the &lt;a href=&#34;https://www.dell.com/community/Automation/bd-p/Automation&#34;&gt;Dell EMC Automation community&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dell EMC PowerMax and VMAX All Flash arrays with Unisphere version 9.1 and later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;This table provides information about the software prerequisites for the Ansible Modules for Dell EMC PowerMax.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Ansible Modules&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Unisphere Version&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;PowerMaxOS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Red Hat Enterprise Linux&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Python version&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Python library version&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Ansible&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;v1.5.0&lt;/td&gt;
+&lt;td&gt;9.1 &lt;br&gt; 9.2&lt;/td&gt;
+&lt;td&gt;5978.221.221 &lt;br&gt; 5978.444.444 &lt;br&gt; 5978.669.669 &lt;br&gt; 5978.711.711&lt;/td&gt;
+&lt;td&gt;7.5 &lt;br&gt; 7.6, 7.7, 7.8, and 8.2&lt;/td&gt;
+&lt;td&gt;2.7.12 &lt;br&gt; 3.5.2 &lt;br&gt; 3.6.x &lt;br&gt; 3.7.x&lt;/td&gt;
+&lt;td&gt;9.1.x.x &lt;br&gt; 9.2.x.x&lt;/td&gt;
+&lt;td&gt;2.9 and 2.10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Please follow PyU4V installation instructions on &lt;a href=&#34;https://pyu4v.readthedocs.io/&#34;&gt;PyU4V Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;idempotency&#34;&gt;Idempotency&lt;/h2&gt;
+&lt;p&gt;The modules are written in such a way that all requests are idempotent and hence fault-tolerant. This means that the result of a successfully performed request is independent of the number of times it is executed.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-ansible-modules-for-dell-emc-powermax&#34;&gt;List of Ansible Modules for Dell EMC PowerMax&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Volume module&lt;/li&gt;
+&lt;li&gt;Host module&lt;/li&gt;
+&lt;li&gt;Host Group module&lt;/li&gt;
+&lt;li&gt;Snapshot module&lt;/li&gt;
+&lt;li&gt;Masking View module&lt;/li&gt;
+&lt;li&gt;Port module&lt;/li&gt;
+&lt;li&gt;Port Group module&lt;/li&gt;
+&lt;li&gt;Storage Group module&lt;/li&gt;
+&lt;li&gt;Gatherfacts module&lt;/li&gt;
+&lt;li&gt;SRDF module&lt;/li&gt;
+&lt;li&gt;RDF Group module&lt;/li&gt;
+&lt;li&gt;Metro DR module&lt;/li&gt;
+&lt;li&gt;Job module&lt;/li&gt;
+&lt;li&gt;Snapshot Policy module&lt;/li&gt;
+&lt;li&gt;Storage Pool module&lt;/li&gt;
+&lt;li&gt;Process Storage Pool module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-of-sdk&#34;&gt;Installation of SDK&lt;/h2&gt;
+&lt;p&gt;Install the python &lt;a href=&#34;https://pypi.org/project/PyU4V/&#34;&gt;sdk&lt;/a&gt; named &amp;lsquo;PyU4V&amp;rsquo;. It can be installed using pip, based on the appropriate python version.&lt;/p&gt;
+&lt;h2 id=&#34;installing-collections&#34;&gt;Installing Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the tar build and run the following command to install the collection anywhere in your system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-galaxy collection install dellemc-powermax-1.5.0.tar.gz -p &amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export ANSIBLE_COLLECTIONS_PATHS=$ANSIBLE_COLLECTIONS_PATHS:&amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-collections&#34;&gt;Using Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In order to use any Ansible module, ensure that the importation of the proper FQCN (Fully Qualified Collection Name) must be embedded in the playbook. For example,
+&lt;br&gt;collections:
+&lt;br&gt;    - dellemc.powermax&lt;/li&gt;
+&lt;li&gt;To generate Ansible documentation for a specific module, embed the FQCN before the module name. For example,
+&lt;br&gt;       &lt;em&gt;ansible-doc dellemc.powermax.dellemc_powermax_gatherfacts&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;running-ansible-modules&#34;&gt;Running Ansible Modules&lt;/h2&gt;
+&lt;p&gt;The Ansible server must be configured with Python library for Unisphere to run the Ansible playbooks. The &lt;a href=&#34;https://github.com/dell/ansible-powermax/tree/1.5.0/docs&#34;&gt;Documents&lt;/a&gt; provide information on different Ansible modules along with their functions and syntax. The parameters table in the Product Guide provides information on various parameters which needs to be configured before running the modules.&lt;/p&gt;
+&lt;h2 id=&#34;ssl-certificate-validation&#34;&gt;SSL Certificate Validation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy the CA certificate to the &amp;ldquo;/etc/pki/ca-trust/source/anchors&amp;rdquo; path of the host by any external means.&lt;/li&gt;
+&lt;li&gt;Set the &amp;ldquo;REQUESTS_CA_BUNDLE&amp;rdquo; environment variable to the path of the SSL certificate using the command:
+&lt;br&gt;       &lt;em&gt;export REQUESTS_CA_BUNDLE=/etc/pki/ca-trust/source/anchors/&amp;laquo;Certificate_Name&amp;raquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Import the SSL certificate to host using the command:
+&lt;br&gt;       &lt;em&gt;update-ca-trust extract&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;If &amp;ldquo;TLS CA certificate bundle error&amp;rdquo; occurs, then follow below steps:
+&lt;ul&gt;
+&lt;li&gt;cd /etc/pki/tls/certs/&lt;/li&gt;
+&lt;li&gt;openssl x509 -in ca-bundle.crt -text -noout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Each module returns the updated state and details of the entity, for example, if you are using the Volume module, all calls will return the updated details of the volume. A sample result is shown in each module&amp;rsquo;s documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release Notes</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: PowerStore Product Guide</title>
+      <title>Docs: Product Guide</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5827,7 +5827,113 @@ Delete an existing protection policy.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: PowerStore Release Notes</title>
+      <title>Docs: ReadMe</title>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ansible-modules-for-dell-emc-powerstore&#34;&gt;Ansible Modules for Dell EMC PowerStore&lt;/h1&gt;
+&lt;p&gt;The Ansible Modules for Dell EMC PowerStore allow Data Center and IT administrators to use RedHat Ansible to automate and orchestrate the configuration and management of Dell EMC PowerStore arrays.&lt;/p&gt;
+&lt;p&gt;The capabilities of the Ansible modules are managing volumes, volume groups, hosts, host groups, snapshots, snapshot rules, replication rules, replication sessions, protection policies, file systems, NAS servers, SMB shares, user and tree quotas, file system snapshots and NFS exports. It also allows the capability to gather facts from the array. The options available for each are list, show, create, modify and delete. These tasks can be executed by running simple playbooks written in yaml syntax. The modules are written so that all the operations are idempotent, so making multiple identical requests has the same effect as making a single request.&lt;/p&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;Ansible modules for PowerStore are supported by Dell EMC and are provided under the terms of the license attached to the source code.
+Dell EMC does not provide support for any source code modifications.
+For any Ansible module issues, questions or feedback, join the &lt;a href=&#34;https://www.dell.com/community/Automation/bd-p/Automation&#34;&gt;Dell EMC Automation community&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dell EMC PowerStore Arrays version 1.0, 2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible 2.9, 2.10&lt;/li&gt;
+&lt;li&gt;Python 3.5, 3.6, 3.7, 3.8&lt;/li&gt;
+&lt;li&gt;Red Hat Enterprise Linux 7.6, 7.7, 7.8, 8.2&lt;/li&gt;
+&lt;li&gt;Python Library for PowerStore version 1.3.0 or higher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;idempotency&#34;&gt;Idempotency&lt;/h2&gt;
+&lt;p&gt;The modules are written in such a way that all requests are idempotent and hence fault-tolerant. It essentially means that the result of a successfully performed request is independent of the number of times it is executed.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-ansible-modules-for-dell-emc-powerstore&#34;&gt;List of Ansible Modules for Dell EMC PowerStore&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Volume module&lt;/li&gt;
+&lt;li&gt;Volume group module&lt;/li&gt;
+&lt;li&gt;Host module&lt;/li&gt;
+&lt;li&gt;Host group module&lt;/li&gt;
+&lt;li&gt;Snapshot module&lt;/li&gt;
+&lt;li&gt;Snapshot rule module&lt;/li&gt;
+&lt;li&gt;Replication rule module&lt;/li&gt;
+&lt;li&gt;Replication session module&lt;/li&gt;
+&lt;li&gt;Protection policy module&lt;/li&gt;
+&lt;li&gt;Gather facts module&lt;/li&gt;
+&lt;li&gt;File system module&lt;/li&gt;
+&lt;li&gt;NAS server module&lt;/li&gt;
+&lt;li&gt;SMB share module&lt;/li&gt;
+&lt;li&gt;Quota module&lt;/li&gt;
+&lt;li&gt;File system snapshot module&lt;/li&gt;
+&lt;li&gt;NFS export module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-of-sdk&#34;&gt;Installation of SDK&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone the repo using the command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/dell/python-powerstore/tree/1.3.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Go to the root directory of setup.&lt;/li&gt;
+&lt;li&gt;Execute the following command:&lt;br/&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;pip install .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;installing-collections&#34;&gt;Installing Collections&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download the tar build and use the following command to install the collection anywhere in your system:&lt;/p&gt;
+&lt;p&gt;ansible-galaxy collection install dellemc-powerstore-1.2.1.tar.gz -p &amp;lt;install_path&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environemnt variable:&lt;/p&gt;
+&lt;p&gt;export ANSIBLE_COLLECTIONS_PATHS=$ANSIBLE_COLLECTIONS_PATHS:&amp;lt;install_path&amp;gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;using-collections&#34;&gt;Using Collections&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In order to use any  Ansible module, ensure that the importing of a proper FQCN(Fully Qualified Collection Name) must be embedded in the playbook. Refer to the followig example:
+&lt;br&gt;collections:
+&lt;br&gt;   - dellemc.powerstore&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For generating Ansible documentaion for a specific module, embed the FQCN  before the module name. Refer to the following example:&lt;/p&gt;
+&lt;p&gt;ansible-doc dellemc.powerstore.dellemc_powerstore_gatherfacts&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;running-ansible-modules&#34;&gt;Running Ansible Modules&lt;/h2&gt;
+&lt;p&gt;The Ansible server must be configured with Python library for PowerStore to run the Ansible playbooks. The &lt;a href=&#34;https://github.com/dell/ansible-powerstore/tree/1.2.1/docs&#34;&gt;Documents&lt;/a&gt; provide information on different Ansible modules along with their functions and syntax. The parameters table in the Product Guide provides information on various parameters which needs to be configured before running the modules.&lt;/p&gt;
+&lt;h2 id=&#34;ssl-certificate-validation&#34;&gt;SSL Certificate Validation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the CA certificate to this &amp;ldquo;/etc/pki/ca-trust/source/anchors&amp;rdquo; path of the host by any external means.
+2.Set the &amp;ldquo;REQUESTS_CA_BUNDLE&amp;rdquo; environment variable to the path of the SSL certificate using the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export REQUESTS_CA_BUNDLE=/etc/pki/ca-trust/source/anchors/&amp;lt;&amp;lt;Certificate_Name&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Import the SSL certificate to host using the following command:&lt;/p&gt;
+&lt;p&gt;update-ca-trust&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Each module returns the updated state and details of the entity.
+For example, if you are using the group module, all calls will return the updated details of the group.
+Sample result is shown in each module&amp;rsquo;s documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release Notes</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

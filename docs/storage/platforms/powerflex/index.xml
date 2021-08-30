@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: PowerFlex Product Guide</title>
+      <title>Docs: Product Guide</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3109,7 +3109,118 @@ EMC PowerFlex storage platform.&lt;/li&gt;
     </item>
     
     <item>
-      <title>Docs: PowerFlex Release Notes</title>
+      <title>Docs: ReadMe</title>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ansible-modules-for-dell-emc-powerflex&#34;&gt;Ansible Modules for Dell EMC PowerFlex&lt;/h1&gt;
+&lt;p&gt;The Ansible Modules for Dell EMC PowerFlex allow Data Center and IT administrators to use RedHat Ansible to automate and orchestrate the provisioning and management of Dell EMC PowerFlex storage systems.&lt;/p&gt;
+&lt;p&gt;The capabilities of the Ansible modules are managing SDCs, volumes, snapshots and storage pools; and to gather high level facts from the storage system. The options available for each are list, show, create, modify and delete. These tasks can be executed by running simple playbooks written in yaml syntax. The modules are written so that all the operations are idempotent, so making multiple identical requests has the same effect as making a single request.&lt;/p&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;Ansible modules for PowerFlex are supported by Dell EMC and are provided under the terms of the license attached to the source code. Dell EMC does not provide support for any source code modifications. For any Ansible module issues, questions or feedback, join the &lt;a href=&#34;https://www.dell.com/community/Automation/bd-p/Automation&#34;&gt;Dell EMC Automation community&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dell EMC PowerFlex (VxFlex OS) version 3.5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible 2.9 or later&lt;/li&gt;
+&lt;li&gt;Python 3.5 or later&lt;/li&gt;
+&lt;li&gt;Red Hat Enterprise Linux 7.6, 7.7, 7.8, 8.2&lt;/li&gt;
+&lt;li&gt;PyPowerFlex python library for PowerFlex 1.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;idempotency&#34;&gt;Idempotency&lt;/h2&gt;
+&lt;p&gt;The modules are written in such a way that all requests are idempotent and hence fault-tolerant. It essentially means that the result of a successfully performed request is independent of the number of times it is executed.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-ansible-modules-for-dell-emc-powerflex&#34;&gt;List of Ansible Modules for Dell EMC PowerFlex&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Gather facts module&lt;/li&gt;
+&lt;li&gt;Snapshot module&lt;/li&gt;
+&lt;li&gt;SDC module&lt;/li&gt;
+&lt;li&gt;Storage pool module&lt;/li&gt;
+&lt;li&gt;Volume module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-of-sdk&#34;&gt;Installation of SDK&lt;/h2&gt;
+&lt;p&gt;Install python sdk named &amp;lsquo;PyPowerFlex&amp;rsquo;. It can be installed using pip, based on appropriate python version.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Clone the repo &amp;ldquo;&lt;a href=&#34;https://github.com/dell/python-powerflex%22&#34;&gt;https://github.com/dell/python-powerflex&amp;quot;&lt;/a&gt;
+using command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/dell/python-powerflex.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the root directory of setup.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execute the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installing-collections&#34;&gt;Installing Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the tar build and execute the following command to install the collection anywhere in your system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-galaxy collection install dellemc-powerflex-1.0.0.tar.gz -p &amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export ANSIBLE_COLLECTIONS_PATHS=$ANSIBLE_COLLECTIONS_PATHS:&amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-collections&#34;&gt;Using Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In order to use any Ansible module, ensure that the importing of proper FQCN(Fully Qualified Collection Name) must be embedded in the playbook.
+Below example can be referred&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;collections:
+- dellemc.powerflex
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For generating Ansible documentation for a specific module, embed the FQCN  before the module name. Refer to the following example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-doc dellemc.powerflex.dellemc_powerflex_gatherfacts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;running-ansible-modules&#34;&gt;Running Ansible Modules&lt;/h2&gt;
+&lt;p&gt;The Ansible server must be configured with Python library for PowerFlex to run the Ansible playbooks. The &lt;a href=&#34;https://github.com/dell/ansible-powerflex/tree/1.0.0/docs&#34;&gt;Documents&lt;/a&gt; provide information on different Ansible modules along with their functions and syntax. The parameters table in the Product Guide provides information on various parameters which needs to be configured before running the modules.&lt;/p&gt;
+&lt;h2 id=&#34;ssl-certificate-validation&#34;&gt;SSL Certificate Validation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Copy the CA certificate to the &amp;ldquo;/etc/pki/ca-trust/source/anchors&amp;rdquo; path of the host by any external means.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the &amp;ldquo;REQUESTS_CA_BUNDLE&amp;rdquo; environment variable to the path of the SSL certificate using the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  export REQUESTS_CA_BUNDLE=/etc/pki/ca-trust/source/anchors/&amp;lt;&amp;lt;Certificate_Name&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Import the SSL certificate to host using the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  update-ca-trust extract
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If &amp;ldquo;TLS CA certificate bundle error&amp;rdquo; occurs, then follow below steps:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  cd /etc/pki/tls/certs/
+  openssl x509 -in ca-bundle.crt -text -noout    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Each module returns the updated state and details of the entity, For example, if you are using the Volume module, all calls will return the updated details of the volume. Sample result is shown in each module&amp;rsquo;s documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release Notes</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

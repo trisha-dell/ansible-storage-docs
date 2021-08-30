@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Unity Product Guide</title>
+      <title>Docs: Product Guide</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/product-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6086,7 +6086,98 @@ Modify storage pool&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: Unity Release notes</title>
+      <title>Docs: ReadMe</title>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ansible-modules-for-dell-emc-unity&#34;&gt;Ansible Modules for Dell EMC Unity&lt;/h1&gt;
+&lt;p&gt;The Ansible Modules for Dell EMC Unity allow Data Center and IT administrators to use RedHat Ansible to automate and orchestrate the configuration and management of Dell EMC Unity arrays.&lt;/p&gt;
+&lt;p&gt;The capabilities of the Ansible modules are managing consistency groups, filesystem, filesystem snapshots, NAS server, NFS export, SMB share, hosts, snapshots, snapshot schedules, storage pools, user quotas, quota trees and volumes; and to gather facts from the array. The options available for each are list, show, create, modify and delete. These tasks can be executed by running simple playbooks written in yaml syntax. The modules are written so that all the operations are idempotent, so making multiple identical requests has the same effect as making a single request.&lt;/p&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;p&gt;Ansible modules for Unity are supported by Dell EMC and are provided under the terms of the license attached to the source code. Dell EMC does not provide support for any source code modifications. For any Ansible module issues, questions or feedback, join the &lt;a href=&#34;https://www.dell.com/community/Automation/bd-p/Automation&#34;&gt;Dell EMC Automation community&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dell EMC Unity Arrays version 5.0, 5.1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible 2.9, 2.10&lt;/li&gt;
+&lt;li&gt;Python 2.8, 3.5, 3.6, 3.7, 3.8&lt;/li&gt;
+&lt;li&gt;Red Hat Enterprise Linux 7.6, 7.7, 7.8, 8.2&lt;/li&gt;
+&lt;li&gt;Python Library for Unity storops version 1.2.10 or higher&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;idempotency&#34;&gt;Idempotency&lt;/h2&gt;
+&lt;p&gt;The modules are written in such a way that all requests are idempotent and hence fault-tolerant. It essentially means that the result of a successfully performed request is independent of the number of times it is executed.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-ansible-modules-for-dell-emc-unity&#34;&gt;List of Ansible Modules for Dell EMC Unity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Consistency group module&lt;/li&gt;
+&lt;li&gt;Filesystem module&lt;/li&gt;
+&lt;li&gt;Filesystem snapshot module&lt;/li&gt;
+&lt;li&gt;Gather facts module&lt;/li&gt;
+&lt;li&gt;Host module&lt;/li&gt;
+&lt;li&gt;NAS server module&lt;/li&gt;
+&lt;li&gt;NFS export module&lt;/li&gt;
+&lt;li&gt;SMB share module&lt;/li&gt;
+&lt;li&gt;Snapshot module&lt;/li&gt;
+&lt;li&gt;Snapshot schedule module&lt;/li&gt;
+&lt;li&gt;Storage pool module&lt;/li&gt;
+&lt;li&gt;User quota module&lt;/li&gt;
+&lt;li&gt;Quota tree module&lt;/li&gt;
+&lt;li&gt;Volume module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-of-sdk&#34;&gt;Installation of SDK&lt;/h2&gt;
+&lt;p&gt;Install python sdk named &amp;lsquo;storops&amp;rsquo;. It can be installed using pip, based on appropriate python version.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install storops
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;installing-collections&#34;&gt;Installing Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the tar build and follow the below command to install the collection anywhere in your system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-galaxy collection install dellemc-unity-1.2.0.tar.gz -p &amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export ANSIBLE_COLLECTIONS_PATHS=$ANSIBLE_COLLECTIONS_PATHS:&amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-collections&#34;&gt;Using Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In order to use any Ansible module, ensure that the importing of proper FQCN(Fully Qualified Collection Name) must be embedded in the playbook.
+Below example can be referred&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;collections:
+- dellemc.unity
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For generating Ansible documentaion for a specific module, embed the FQCN  before the module name. The below example can be referred.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-doc dellemc.unity.dellemc_unity_gatherfacts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;running-ansible-modules&#34;&gt;Running Ansible Modules&lt;/h2&gt;
+&lt;p&gt;The Ansible server must be configured with Python library for Unity to run the Ansible playbooks. The &lt;a href=&#34;https://github.com/dell/ansible-unity/tree/1.2.0/docs&#34;&gt;Documents&lt;/a&gt; provide information on different Ansible modules along with their functions and syntax. The parameters table in the Product Guide provides information on various parameters which need to be configured before running the modules.&lt;/p&gt;
+&lt;h2 id=&#34;ssl-certificate-validation&#34;&gt;SSL Certificate Validation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: These modules are supported through CA certified certificate only, however a self-signed certificate is not supported.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy the CA certificate to this &amp;ldquo;/etc/pki/ca-trust/source/anchors&amp;rdquo; path of the host by any external means.&lt;/li&gt;
+&lt;li&gt;Set the &amp;ldquo;REQUESTS_CA_BUNDLE&amp;rdquo; environment variable to the path of the SSL certificate using the command &amp;ldquo;export REQUESTS_CA_BUNDLE=/etc/pki/ca-trust/source/anchors/&amp;laquo;Certificate_Name&amp;raquo;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Import the SSL certificate to host using the command &amp;ldquo;update-ca-trust&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Each module returns the updated state and details of the entity, For example, if you are using the Volume module, all calls will return the updated details of the volume. Sample result is shown in each module&amp;rsquo;s documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release notes</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: PowerScale Product Guide</title>
+      <title>Docs: Product Guide</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/product_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4118,7 +4118,110 @@ Delete a filesystem snapshot.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: PowerScale Release Notes</title>
+      <title>Docs: ReadMe</title>
+      <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/readme/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;ansible-modules-for-dell-emc-powerscale&#34;&gt;Ansible Modules for Dell EMC PowerScale&lt;/h1&gt;
+&lt;p&gt;The Ansible Modules for Dell EMC PowerScale allow Data Center and IT administrators to use RedHat Ansible to automate and orchestrate the configuration and management of Dell EMC PowerScale arrays.&lt;/p&gt;
+&lt;p&gt;The capabilities of the Ansible modules are managing users, groups, node, active directory, ldap, access zones, file system, nfs exports, smb shares, snapshots, snapshot schedules and smart quotas, and to gather facts from the array. The tasks can be executed by running simple playbooks written in yaml syntax.&lt;/p&gt;
+&lt;h2 id=&#34;support&#34;&gt;Support&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible modules for PowerScale are supported by Dell EMC and are provided under the terms of the license attached to the source code.&lt;/li&gt;
+&lt;li&gt;For any setup, configuration issues, questions or feedback, join the &lt;a href=&#34;https://www.dell.com/community/Automation/bd-p/Automation&#34;&gt;Dell EMC Automation community&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For any Dell EMC storage issues, please contact Dell support at: &lt;a href=&#34;https://www.dell.com/support&#34;&gt;https://www.dell.com/support&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Dell EMC does not provide support for any source code modifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dell EMC PowerScale Arrays version 8.0 and above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ansible 2.9, 2.10&lt;/li&gt;
+&lt;li&gt;Python 3.5, 3.6, 3.7&lt;/li&gt;
+&lt;li&gt;Red Hat Enterprise Linux 7.6, 7.7, 7.8, 8.2&lt;/li&gt;
+&lt;li&gt;Python SDK for PowerScale (version 8.1.1 and 9.0.0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;idempotency&#34;&gt;Idempotency&lt;/h2&gt;
+&lt;p&gt;The modules are written in such a way that all requests are idempotent and hence fault-tolerant. It essentially means that the result of a successfully performed request is independent of the number of times it is executed.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-ansible-modules-for-dell-emc-powerscale&#34;&gt;List of Ansible Modules for Dell EMC PowerScale&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;File System Module&lt;/li&gt;
+&lt;li&gt;Access Zone Module&lt;/li&gt;
+&lt;li&gt;Users Module&lt;/li&gt;
+&lt;li&gt;Groups Module&lt;/li&gt;
+&lt;li&gt;Snapshot Module&lt;/li&gt;
+&lt;li&gt;Snapshot Schedule Module&lt;/li&gt;
+&lt;li&gt;NFS Module&lt;/li&gt;
+&lt;li&gt;SMB Module&lt;/li&gt;
+&lt;li&gt;Smart Quota Module&lt;/li&gt;
+&lt;li&gt;Gather Facts Module&lt;/li&gt;
+&lt;li&gt;Active Directory Module&lt;/li&gt;
+&lt;li&gt;LDAP Module&lt;/li&gt;
+&lt;li&gt;Node Module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation-of-sdk&#34;&gt;Installation of SDK&lt;/h2&gt;
+&lt;p&gt;Based on which PowerScale version is being used, install sdk as  follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For PowerScale version &amp;lt; 9.0.0, install python &lt;a href=&#34;https://pypi.org/project/isi-sdk-8-1-1/&#34;&gt;sdk&lt;/a&gt; named &amp;lsquo;isi-sdk-8-1-1&amp;rsquo; as below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  pip install isi_sdk_8_1_1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For PowerScale version 9.0.0 and above, install python &lt;a href=&#34;https://pypi.org/project/isi-sdk-9-0-0/&#34;&gt;sdk&lt;/a&gt; named &amp;lsquo;isi-sdk-9-0-0&amp;rsquo; as below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  pip install isi_sdk_9_0_0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installing-collections&#34;&gt;Installing Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Download the tar build and run the following command to install the collection anywhere in your system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ansible-galaxy collection install dellemc-powerscale-1.2.0.tar.gz -p &amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the environment variable:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export ANSIBLE_COLLECTIONS_PATHS=$ANSIBLE_COLLECTIONS_PATHS:&amp;lt;install_path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-collections&#34;&gt;Using Collections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In order to use any Ansible module, ensure that the importation of the proper FQCN (Fully Qualified Collection Name) is embedded in the playbook. For example,
+&lt;br&gt;collections:
+&lt;br&gt;    - dellemc.powerscale&lt;/li&gt;
+&lt;li&gt;To generate Ansible documentation for a specific module, embed the FQCN before the module name. For example,
+&lt;br&gt;       &lt;em&gt;ansible-doc dellemc.powerscale.dellemc_powerscale_gatherfacts&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;running-ansible-modules&#34;&gt;Running Ansible Modules&lt;/h2&gt;
+&lt;p&gt;The Ansible server must be configured with Python library for OneFS to run the Ansible playbooks. The &lt;a href=&#34;https://github.com/dell/ansible-powerscale/tree/1.2.0/docs&#34;&gt;Documents&lt;/a&gt; provide information on different Ansible modules along with their functions and syntax. The parameters table in the Product Guide provides information on various parameters which need to be configured before running the modules.&lt;/p&gt;
+&lt;h2 id=&#34;ssl-certificate-validation&#34;&gt;SSL Certificate Validation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Export the SSL certificate using KeyStore Explorer tool or from the browser in .crt format.&lt;/li&gt;
+&lt;li&gt;Append the SSL certificate to the Certifi package file cacert.pem.
+&lt;ul&gt;
+&lt;li&gt;For Python 3.5 : cat &amp;lt;&amp;gt; &amp;raquo; /usr/local/lib/python3.5/dist-packages/certifi/cacert.pem&lt;/li&gt;
+&lt;li&gt;For Python 2.7 : cat &amp;lt;&amp;gt; &amp;raquo; /usr/local/lib/python2.7/dist-packages/certifi/cacert.pem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Each module returns the updated state and details of the entity.
+For example, if you are using the group module, all calls will return the updated details of the group.
+Sample result is shown in each module&amp;rsquo;s documentation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Release Notes</title>
       <link>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

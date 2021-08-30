@@ -108,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/product-guide/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/network/platforms/powerflex/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
   </url>
@@ -120,11 +115,6 @@
   <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/server/platforms/powerflex/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/release-notes/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -163,11 +153,6 @@
   </url>
   
   <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/product-guide/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/network/platforms/powermax/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
   </url>
@@ -175,11 +160,6 @@
   <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/server/platforms/powermax/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/release-notes/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -218,11 +198,6 @@
   </url>
   
   <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/product_guide/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/network/platforms/powerscale/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
   </url>
@@ -230,11 +205,6 @@
   <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/server/platforms/powerscale/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/release-notes/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
   </url>
   
   <url>
@@ -273,11 +243,6 @@
   </url>
   
   <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/product-guide/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/network/platforms/powerstore/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
   </url>
@@ -288,8 +253,78 @@
   </url>
   
   <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/product-guide/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/product-guide/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/product_guide/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/product-guide/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/product-guide/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/readme/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/readme/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/readme/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/readme/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/readme/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerflex/release-notes/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powermax/release-notes/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerscale/release-notes/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/release-notes/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/release-notes/</loc>
+    <lastmod>2021-08-30T06:44:46-04:00</lastmod>
   </url>
   
   <url>
@@ -343,11 +378,6 @@
   </url>
   
   <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/product-guide/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/network/platforms/unity/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
   </url>
@@ -355,11 +385,6 @@
   <url>
     <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/server/platforms/unity/release-notes/</loc>
     <lastmod>2021-08-30T04:59:18-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/unity/release-notes/</loc>
-    <lastmod>2021-08-30T04:29:44-04:00</lastmod>
   </url>
   
   <url>
