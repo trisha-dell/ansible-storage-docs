@@ -168,7 +168,7 @@ enable = false
         desc = "Chat with other project developers"
 [[params.links.developer]]
 	name = "Developer mailing list"
-	url = "https://www.delltechnologies.com/en-us/contactus.htm"
+	url = "ansible.team@dell.com"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
