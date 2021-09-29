@@ -15,11 +15,11 @@
 <meta property="og:description" content="PowerStore Release notes documentation" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trisha-dell.github.io/ansible-storage-docs/docs/storage/platforms/powerstore/release-notes/" />
-<meta property="article:modified_time" content="2021-08-30T06:44:46-04:00" /><meta property="og:site_name" content="Dell Technologies" />
+<meta property="article:modified_time" content="2021-09-29T03:23:24-04:00" /><meta property="og:site_name" content="Dell Technologies" />
 <meta itemprop="name" content="Release Notes">
 <meta itemprop="description" content="PowerStore Release notes documentation">
-<meta itemprop="dateModified" content="2021-08-30T06:44:46-04:00" />
-<meta itemprop="wordCount" content="347">
+<meta itemprop="dateModified" content="2021-09-29T03:23:24-04:00" />
+<meta itemprop="wordCount" content="371">
 
 
 
@@ -82,7 +82,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/ansible-storage-docs/offline-search-index.8d7dc855177942edf8b7206a2556cf0a152704d6ce50a01eb326ac589bc212aaf6ea0bfe124568acf52bfe635754e312825425dd3327c1a1dd2f3586efe1a0ff.json"
+  data-offline-search-index-json-src="/ansible-storage-docs/offline-search-index.019961231c638708ed3268d1861b0960734567e4b28f3a5f259ec82b5634c65eafe291c06c7463c27bfba6654041f06dd5ac6a4000275d6cb7011cc7c3cc421f.json"
   data-offline-search-base-href="/"
 >
 
@@ -112,7 +112,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/ansible-storage-docs/offline-search-index.8d7dc855177942edf8b7206a2556cf0a152704d6ce50a01eb326ac589bc212aaf6ea0bfe124568acf52bfe635754e312825425dd3327c1a1dd2f3586efe1a0ff.json"
+  data-offline-search-index-json-src="/ansible-storage-docs/offline-search-index.019961231c638708ed3268d1861b0960734567e4b28f3a5f259ec82b5634c65eafe291c06c7463c27bfba6654041f06dd5ac6a4000275d6cb7011cc7c3cc421f.json"
   data-offline-search-base-href="/"
 >
 
@@ -510,7 +510,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#release-notes-120">Release Notes 1.2.0</a></li>
+        <li><a href="#release-notes-130">Release Notes 1.3.0</a></li>
       </ul>
     </li>
     <li><a href="#content">Content</a></li>
@@ -592,7 +592,7 @@
 
 	       
 	<h1 id="ansible-modules-for-dell-emc-powerstore"><strong>Ansible Modules for Dell EMC PowerStore</strong></h1>
-<h3 id="release-notes-120">Release Notes 1.2.0</h3>
+<h3 id="release-notes-130">Release Notes 1.3.0</h3>
 <blockquote>
 <p>© 2021 Dell Inc. or its subsidiaries. All rights reserved. Dell,
 EMC, and other trademarks are trademarks of Dell Inc. or its
@@ -625,52 +625,67 @@ Modules for Dell EMC PowerStore.</p>
 <tbody>
 <tr>
 <td>01</td>
-<td>June 2021</td>
-<td>Current release of Ansible Modules for Dell EMC PowerStore 1.2.0</td>
+<td>September 2021</td>
+<td>Current release of Ansible Modules for Dell EMC PowerStore 1.3.0</td>
 </tr>
 </tbody>
 </table>
 <h2 id="product-description">Product Description</h2>
-<p>The Ansible modules for Dell EMC PowerStore are used to automate and orchestrate the deployment, configuration, and management of Dell EMC PowerStore storage systems. The capabilities of Ansible modules are managing Volumes, Volume groups, Hosts, Host groups, Protection policies, Replication rules, Replication sessions, NFS exports, SMB shares, NAS server, File systems, File system snapshots, Quota tree, Quotas for filesystem and obtaining PowerStore system information. The options available for each capability are list, show, create, delete, and modify. The only exception is for NAS server for which the options available are list &amp; modify.</p>
+<p>The Ansible modules for Dell EMC PowerStore are used to automate and orchestrate the deployment, configuration, and management of Dell EMC PowerStore storage systems. The capabilities of Ansible modules are managing Volumes, Volume groups, Hosts, Host groups, Protection policies, Replication rules, Replication sessions, NFS exports, SMB shares, NAS server, File systems, File system snapshots, Quota tree, Quotas for filesystem, Cluster, Networks, Local users, Roles, Job, and obtaining PowerStore system information. The options available for each capability are list, show, create, delete, and modify. The only exception is for NAS server for which the options available are list &amp; modify.</p>
 <h2 id="new-features--enhancements">New features &amp; enhancements</h2>
 <p>Along with the previous release deliverables, this release supports the following features -</p>
 <ul>
 <li>
-<p>Replication rule module supports the following functionalities:</p>
+<p>Cluster module supports the following functionalities:</p>
 <ul>
-<li>Create a replication rule</li>
-<li>Get replication rule details</li>
-<li>Modify attributes of replication rule</li>
-<li>Delete replication rule</li>
+<li>Get cluster details</li>
+<li>Modify attributes of cluster</li>
 </ul>
 </li>
 <li>
-<p>Replication session module supports the following functionalities:</p>
+<p>Network module supports the following functionalities:</p>
 <ul>
-<li>Get replication session details</li>
-<li>Modify the state of the replication session</li>
+<li>Get network details</li>
+<li>Modify attributes of the network</li>
 </ul>
 </li>
 <li>
-<p>Protection policy module has the following enhancements:</p>
+<p>Local user module has the following functionalities:</p>
 <ul>
-<li>Add a replication rule to protection policy</li>
-<li>Remove a replication rule from protection policy</li>
+<li>Create a local user</li>
+<li>Get local user details</li>
+<li>Modify attributes of local user</li>
+<li>Delete a local user</li>
+</ul>
+</li>
+<li>
+<p>Role module has the following functionalities:</p>
+<ul>
+<li>Get role details</li>
+</ul>
+</li>
+<li>
+<p>Job module has the following functionalities:</p>
+<ul>
+<li>Get job details for a given job ID</li>
 </ul>
 </li>
 <li>
 <p>Gather Facts Module has the following enhancements:</p>
 <ul>
-<li>List of remote systems</li>
-<li>List of replication sessions</li>
-<li>List of replication rules</li>
+<li>List of users</li>
+<li>List of roles</li>
+<li>List of networks</li>
+<li>List of appliances</li>
 </ul>
 </li>
 </ul>
 <h2 id="known-issues">Known issues</h2>
 <p>There are no known issues.</p>
 <h2 id="limitations">Limitations</h2>
-<p>There are no known limitations.</p>
+<ul>
+<li>All occurrences of Password and related parameters do not support Idempotency.</li>
+</ul>
 <h2 id="distribution">Distribution</h2>
 <p>The software package is available for download from the <a href="https://github.com/dell/ansible-powerstore/">Ansible Modules
 for PowerStore GitHub</a> page.</p>
