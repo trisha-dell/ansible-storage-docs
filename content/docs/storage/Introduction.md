@@ -31,8 +31,6 @@ Get Started
 
 [Download](https://access.redhat.com/articles/3642632) the Supported Ansible Collection for Dell EMC from Automation Hub (Ansible subscription required)
 
-[Contact us](https://www.ansible.com/contact-us) for an infrastructure automation demo.
-
 [Dell EMC DevOps and Automation resources](https://www.delltechnologies.com/en-us/storage/storage-automation-and-developer-resources/index.htm#tab0=0)
 
 [Dell EMC Storage Automation and Developer](https://www.delltechnologies.com/en-us/storage/storage-automation-and-developer-resources/index.htm#tab0=0)
