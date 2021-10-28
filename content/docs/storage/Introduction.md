@@ -15,7 +15,7 @@ Ansible modules for Dell EMC storage platforms: PowerMax, PowerStore, PowerScale
 customers improve efficiency, flexibility, and agility to run their datacenter operations.Gone are the days when automation meant specialized programming skills like Perl, Python or hard to
 use shell scripting.Instead, Ansible modules for Dell EMC storage do the heavy lifting of coding REST API interactions with storage platforms and expose the storage functionality to the Ansible engine.IT users simply need to specify the storage management actions and the desired configuration in a simple key-value pair format in a YAML file.Dell EMC storage Ansible plugins verify if the desired state has been reached and execute the actions only if the desired state is not reached.This underlying execution intelligence (idempotency) avoids inadvertent execution of actions and any resulting drift in the infrastructure configuration.This approach helps makes it easier to attain consistent and highly scalable operations over the entire IT infrastructure stack for a variety of use cases like DevOps process automation and managing large scale application deployments.
 
-Getting Started:
+Getting Started
 ----------------
 Looking to learn more about the Dell Certified Content
 Collection? Here are some great resources to get you started:
