@@ -5,7 +5,5 @@ Nothing defined here. The Hugo project that uses this theme can override theme v
 assets/scss/_variables_project.scss
 
 */
-body {
- background-image: url("network.jpg");
- background-color: #cccccc;
-}
+$primary: #390040;
+$secondary: #A23B72;
