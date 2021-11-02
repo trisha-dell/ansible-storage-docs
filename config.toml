@@ -167,11 +167,15 @@ enable = false
 	url = "https://dellcustomer.slack.com/archives/C01CY517PU4"
 	icon = "fab fa-slack"
         desc = "Chat with other project developers"
-[[params.links.developer]]
-	name = "Developer mailing list"
-	uri = "mailto:ansible.team@dell.com"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
+#[[params.links.developer]]
+#	name = "Developer mailing list"
+#	uri = "mailto:ansible.team@dell.com"
+#	icon = "fa fa-envelope"
+#        desc = "Discuss development issues around the project"
+[[params.social]]
+    icon = "envelope"
+    icon_pack = "fas"
+    link = "mailto:ansible.team@dell.com"
 
 
 
