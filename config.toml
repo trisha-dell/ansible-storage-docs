@@ -168,6 +168,7 @@ enable = false
 	icon = "fab fa-slack"
         desc = "Chat with other project developers"
 [[params.links.developer]]
+        name = "Mail"
 	icon = "envelope"
         icon_pack = "fas"
         link = "mailto:ansible.team@dell.com"
