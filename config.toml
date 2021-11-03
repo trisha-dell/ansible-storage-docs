@@ -170,7 +170,7 @@ enable = false
 [[params.links.developer]]
         name = "Mailing list"
 	icon = "fa fa-envelope"
-        link = "mailto:ansible.team@dell.com"
+        url = "mailto:ansible.team@dell.com"
 	desc = "Mailing list"
 #[[params.social]]
 #    icon = "envelope"
