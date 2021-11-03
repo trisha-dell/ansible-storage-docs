@@ -171,6 +171,7 @@ enable = false
         name = "Mailing list"
 	icon = "fa fa-envelope"
         link = "mailto:ansible.team@dell.com"
+	desc = "Mailing list"
 #[[params.social]]
 #    icon = "envelope"
 #    icon_pack = "fas"
