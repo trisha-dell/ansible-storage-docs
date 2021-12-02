@@ -6,7 +6,7 @@ weight: 1
 
 ## Automating Dell EMC Storage with the Ansible Automation Platform
 
-The Dell EMC storage portfolio provides deep integration with Ansible through a number of modules to enable configuration management and workflow automation for a number of use cases including SAN zone setup, provisioning, snapshots, remote replication as well as data and workload mobility across the hybrid cloud.
+The Dell EMC storage portfolio provides deep integration with Ansible through a number of modules to enable configuration management and workflow automation for a number of use cases including SAN zone setup, provisioning, snapshots, remote replication as well as data and workload mobility across the hybrid cloud. The platform details can be found [here](../)
 
 Solution Benefits
 -----------------
