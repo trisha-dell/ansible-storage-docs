@@ -51,7 +51,7 @@
         
         
         &lt;h2 id=&#34;automating-dell-emc-storage-with-the-ansible-automation-platform&#34;&gt;Automating Dell EMC Storage with the Ansible Automation Platform&lt;/h2&gt;
-&lt;p&gt;The Dell EMC storage portfolio provides deep integration with Ansible through a number of modules to enable configuration management and workflow automation for a number of use cases including SAN zone setup, provisioning, snapshots, remote replication as well as data and workload mobility across the hybrid cloud.&lt;/p&gt;
+&lt;p&gt;The Dell EMC storage portfolio provides deep integration with Ansible through a number of modules to enable configuration management and workflow automation for a number of use cases including SAN zone setup, provisioning, snapshots, remote replication as well as data and workload mobility across the hybrid cloud. The platform details can be found &lt;a href=&#34;../&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;solution-benefits&#34;&gt;Solution Benefits&lt;/h2&gt;
 &lt;p&gt;Ansible modules for Dell EMC storage platforms: PowerMax, PowerStore, PowerScale, PowerFlex, Unity XT and VPLEX help
 customers improve efficiency, flexibility, and agility to run their datacenter operations.Gone are the days when automation meant specialized programming skills like Perl, Python or hard to
